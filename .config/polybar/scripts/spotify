@@ -1,0 +1,14 @@
+#!/usr/bin/env python3
+
+import subprocess
+
+status = subprocess.getoutput("playerctl --player=spotify status")
+current_info = subprocess.getoutput('playerctl --player=spotify metadata --format "{{ artist }} - {{ title }}"')
+
+if len(current_info) > 25:
+    current_info = current_info[:25] + "..."  
+
+if status == "Playing":
+  print(" " + current_info)
+else:
+  print('')
