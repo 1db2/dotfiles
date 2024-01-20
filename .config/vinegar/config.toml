@@ -1,0 +1,18 @@
+# See how to configure Vinegar on the documentation website:
+# https://vinegarhq.org/Configuration
+wineroot = "/home/idb/lutris-GE-Proton8-25-x86_64/"
+multiple_instances = true
+[player]
+dxvk = false
+renderer = "Vulkan"
+launcher = "gamemoderun"
+discord_rpc = false
+
+[player.fflags]
+FFlagFixGraphicsQuality = true
+FFlagHandleAltEnterFullscreenManually = true
+#DFIntNewRunningBaseAltitudeP = 49534
+#FFlagDebugSimIntegrationStabilityTesting = true
+#DFIntTaskSchedulerTargetFps = 60
+DFIntS2PhysicsSenderRate = 2
+
