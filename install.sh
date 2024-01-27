@@ -35,20 +35,20 @@ rm -rf picom/
 #copying dotfiles
 cd
 
-cp -r ~/dotfiles/.config/i3/scripts ~/.config/i3
-cp -r ~/dotfiles/.config/i3/wallpapers ~/.config/i3/
+cp -r ~/home/$USER/dotfiles/.config/i3/scripts ~/.config/i3
+cp -r ~/home/$USER/dotfiles/.config/i3/wallpapers ~/.config/i3/
 
 mkdir ~/.config/kitty/
-cp ~/dotfiles/.config/kitty/kitty.conf ~/.config
+cp ~/home/$USER/dotfiles/.config/kitty/kitty.conf ~/.config
 
 mkdir ~/.config/picom/
-cp ~/dotfiles/.config/picom/picom.conf ~/.config/picom/
+cp ~/home/$USER/dotfiles/.config/picom/picom.conf ~/.config/picom/
 
 mkdir ~/.config/polybar/
-cp -r ~/dotfiles/.config/polybar/scripts ~/.config/polybar/
-cp ~/dotfiles/.config/polybar/config.ini ~/.config/polybar/
-cp ~/dotfiles/.config/polybar/launch.sh ~/.config/polybar/
+cp -r ~/home/$USER/dotfiles/.config/polybar/scripts ~/.config/polybar/
+cp ~/home/$USER/dotfiles/.config/polybar/config.ini ~/.config/polybar/
+cp ~/home/$USER/dotfiles/.config/polybar/launch.sh ~/.config/polybar/
 
 mkdir ~/.config/rofi/
-cp -r ~/dotfiles/.config/rofi/bin/ ~/.config/rofi/
-cp -r ~/dotfiles/.config/rofi/config ~/.config/rofi/
+cp -r ~/home/$USER/dotfiles/.config/rofi/bin/ ~/.config/rofi/
+cp -r ~/home/$USER/dotfiles/.config/rofi/config ~/.config/rofi/
