@@ -35,20 +35,20 @@ rm -rf picom/
 #copying dotfiles
 cd
 
-cp -r "$HOME/dotfiles/.config/i3/scripts" ~/.config/i3
-cp -r "$HOME/dotfiles/.config/i3/wallpapers" ~/.config/i3/
+cp -r "$HOME/dotfiles/.config/i3/scripts" "$HOME.config/i3"
+cp -r "$HOME/dotfiles/.config/i3/wallpapers" "$HOME.config/i3/"
 
-mkdir ~/.config/kitty/
-cp "$HOME/dotfiles/.config/kitty/kitty.conf" ~/.config
+mkdir "$HOME/.config/kitty/"
+cp "$HOME/dotfiles/.config/kitty/kitty.conf" "$HOME.config"
 
-mkdir ~/.config/picom/
-cp "$HOME/dotfiles/.config/picom/picom.conf" ~/.config/picom/
+mkdir "$HOME/.config/picom/"
+cp "$HOME/dotfiles/.config/picom/picom.conf" "$HOME.config/picom/"
 
-mkdir ~/.config/polybar/
-cp -r "$HOME/dotfiles/.config/polybar/scripts" ~/.config/polybar/
-cp "$HOME/dotfiles/.config/polybar/config.ini" ~/.config/polybar/
-cp "$HOME/dotfiles/.config/polybar/launch.sh" ~/.config/polybar/
+mkdir "$HOME/.config/polybar/"
+cp -r "$HOME/dotfiles/.config/polybar/scripts" "$HOME/.config/polybar/"
+cp "$HOME/dotfiles/.config/polybar/config.ini" "$HOME.config/polybar/"
+cp "$HOME/dotfiles/.config/polybar/launch.sh" "$HOME.config/polybar/"
 
-mkdir ~/.config/rofi/
-cp -r "$HOME/dotfiles/.config/rofi/bin/" ~/.config/rofi/
-cp -r "$HOME/dotfiles/.config/rofi/config" ~/.config/rofi/
+mkdir "$HOME/.config/rofi/
+cp -r "$HOME/dotfiles/.config/rofi/bin/" "$HOME.config/rofi/"
+cp -r "$HOME/dotfiles/.config/rofi/config" "$HOME.config/rofi/"
