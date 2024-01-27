@@ -37,6 +37,7 @@ cd
 
 cp -r "$HOME/dotfiles/.config/i3/scripts" "$HOME/.config/i3"
 cp -r "$HOME/dotfiles/.config/i3/wallpapers" "$HOME/.config/i3/"
+cp "$HOME/dotfiles/.config/i3/config" "$HOME/.config/i3"
 
 mkdir "$HOME/.config/kitty/"
 cp "$HOME/dotfiles/.config/kitty/kitty.conf" "$HOME/.config/kitty"
