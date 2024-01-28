@@ -1,6 +1,6 @@
 #!/bin/bash
 
-apps=("kitty" "polybar" "rofi" "polkit" "polkit-kde-agent" "feh" "flameshot" "meson" "ninja" "libconfig" "uthash" "python-i3ipc" "playerctl" "xorg-xrandr")
+apps=("kitty" "polybar" "rofi" "polkit" "polkit-kde-agent" "feh" "flameshot" "meson" "ninja" "libconfig" "uthash" "python-i3ipc" "playerctl" "xorg-xrandr" "ttf-iosevka-nerd")
 
 not_installed=()
 
