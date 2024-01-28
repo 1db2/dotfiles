@@ -35,21 +35,21 @@ rm -rf picom/
 #copying dotfiles
 cd
 
-cp -r "$HOME/dotfiles/.config/i3/scripts" "$HOME/.config/i3"
-cp -r "$HOME/dotfiles/.config/i3/wallpapers" "$HOME/.config/i3/"
-cp "$HOME/dotfiles/.config/i3/config" "$HOME/.config/i3"
+cp -r "/home/"~username"/dotfiles/.config/i3/scripts" "/home/"~username"/.config/i3"
+cp -r "/home/"~username"/dotfiles/.config/i3/wallpapers" "/home/"~username"/.config/i3/"
+cp "/home/"~username"/dotfiles/.config/i3/config" "/home/"~username"/.config/i3"
 
-mkdir "$HOME/.config/kitty/"
-cp "$HOME/dotfiles/.config/kitty/kitty.conf" "$HOME/.config/kitty"
+mkdir "/home/"~username"/.config/kitty/"
+cp "/home/"~username"/dotfiles/.config/kitty/kitty.conf" "/home/"~username"/.config/kitty"
 
-mkdir "$HOME/.config/picom/"
-cp "$HOME/dotfiles/.config/picom/picom.conf" "$HOME/.config/picom/"
+mkdir "/home/"~username"/.config/picom/"
+cp "/home/"~username"/dotfiles/.config/picom/picom.conf" "/home/"~username"/.config/picom/"
 
-mkdir "$HOME/.config/polybar/"
-cp -r "$HOME/dotfiles/.config/polybar/scripts" "$HOME/.config/polybar/"
-cp "$HOME/dotfiles/.config/polybar/config.ini" "$HOME/.config/polybar/"
-cp "$HOME/dotfiles/.config/polybar/launch.sh" "$HOME/.config/polybar/"
+mkdir "/home/"~username"/.config/polybar/"
+cp -r "/home/"~username"/dotfiles/.config/polybar/scripts" "/home/"~username"/.config/polybar/"
+cp "/home/"~username"/dotfiles/.config/polybar/config.ini" "/home/"~username"/.config/polybar/"
+cp "/home/"~username"/dotfiles/.config/polybar/launch.sh" "/home/"~username"/.config/polybar/"
 
-mkdir "$HOME/.config/rofi/
-cp -r "$HOME/dotfiles/.config/rofi/bin/" "$HOME/.config/rofi/"
-cp -r "$HOME/dotfiles/.config/rofi/config" "$HOME/.config/rofi/"
+mkdir "/home/"~username"/.config/rofi/
+cp -r "/home/"~username"/dotfiles/.config/rofi/bin/" "/home/"~username"/.config/rofi/"
+cp -r "/home/"~username"/dotfiles/.config/rofi/config" "/home/"~username"/.config/rofi/"
