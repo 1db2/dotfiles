@@ -30,26 +30,26 @@ meson --buildtype=release . build
 ninja -C build
 ninja -C build install
 cd ..
-rm -rf picom/
+rm -rf picom/e
 
 #copying dotfiles
 cd
+home = ~
+cp -r "$home/dotfiles/.config/i3/scripts" "$home/.config/i3"
+cp -r "$home/dotfiles/.config/i3/wallpapers" "$home/.config/i3/"
+cp "$home/dotfiles/.config/i3/config" "$home/.config/i3"
 
-cp -r "/home/"~username"/dotfiles/.config/i3/scripts" "/home/"~username"/.config/i3"
-cp -r "/home/"~username"/dotfiles/.config/i3/wallpapers" "/home/"~username"/.config/i3/"
-cp "/home/"~username"/dotfiles/.config/i3/config" "/home/"~username"/.config/i3"
+mkdir "$home/.config/kitty/"
+cp "$home/dotfiles/.config/kitty/kitty.conf" "$home/.config/kitty"
 
-mkdir "/home/"~username"/.config/kitty/"
-cp "/home/"~username"/dotfiles/.config/kitty/kitty.conf" "/home/"~username"/.config/kitty"
+mkdir "$home/.config/picom/"
+cp "$home/dotfiles/.config/picom/picom.conf" "$home/.config/picom/"
 
-mkdir "/home/"~username"/.config/picom/"
-cp "/home/"~username"/dotfiles/.config/picom/picom.conf" "/home/"~username"/.config/picom/"
+mkdir "$home/.config/polybar/"
+cp -r "$home/dotfiles/.config/polybar/scripts" "$home/.config/polybar/"
+cp "$home/dotfiles/.config/polybar/config.ini" "$home/.config/polybar/"
+cp "$home/dotfiles/.config/polybar/launch.sh" "$home/.config/polybar/"
 
-mkdir "/home/"~username"/.config/polybar/"
-cp -r "/home/"~username"/dotfiles/.config/polybar/scripts" "/home/"~username"/.config/polybar/"
-cp "/home/"~username"/dotfiles/.config/polybar/config.ini" "/home/"~username"/.config/polybar/"
-cp "/home/"~username"/dotfiles/.config/polybar/launch.sh" "/home/"~username"/.config/polybar/"
-
-mkdir "/home/"~username"/.config/rofi/
-cp -r "/home/"~username"/dotfiles/.config/rofi/bin/" "/home/"~username"/.config/rofi/"
-cp -r "/home/"~username"/dotfiles/.config/rofi/config" "/home/"~username"/.config/rofi/"
+mkdir "$home/.config/rofi/
+cp -r "$home/dotfiles/.config/rofi/bin/" "$home/.config/rofi/"
+cp -r "$home/dotfiles/.config/rofi/config" "$home/.config/rofi/"
