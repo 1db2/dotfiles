@@ -41,8 +41,8 @@ cp -r "$home/dotfiles/.config/i3/wallpapers" "$home/.config/i3/"
 cp "$home/dotfiles/.config/i3/config" "$home/.config/i3"
 #script permissions
 cd "$home/.config/i3/scripts"
-sudo chmod +x autotiling
-sudo chmod +x screen.sh
+chmod +x autotiling
+chmod +x screen.sh
 
 mkdir "$home/.config/kitty/"
 cp "$home/dotfiles/.config/kitty/kitty.conf" "$home/.config/kitty"
@@ -56,13 +56,13 @@ cp "$home/dotfiles/.config/polybar/config.ini" "$home/.config/polybar/"
 cp "$home/dotfiles/.config/polybar/launch.sh" "$home/.config/polybar/"
 #script permissions
 cd "$home/.config/polybar"
-sudo chmod +x launch.sh
+chmod +x launch.sh
 cd "$home/.config/polybar/scripts"
-sudo chmod +x spotify
+chmod +x spotify
 
 mkdir "$home/.config/rofi/"
 cp -r "$home/dotfiles/.config/rofi/bin/" "$home/.config/rofi/"
 cp -r "$home/dotfiles/.config/rofi/config" "$home/.config/rofi/"
 #script permissions
 cd "$home/.config/rofi/bin/"
-sudo chmod +x launcher
+chmod +x launcher
