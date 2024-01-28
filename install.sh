@@ -31,10 +31,11 @@ ninja -C build
 ninja -C build install
 cd ..
 rm -rf picom/e
-
 #copying dotfiles
+
+home="$(getent passwd $SUDO_USER | cut -d: -f6 | grep -i 'home')"
+
 cd
-home = ~
 cp -r "$home/dotfiles/.config/i3/scripts" "$home/.config/i3"
 cp -r "$home/dotfiles/.config/i3/wallpapers" "$home/.config/i3/"
 cp "$home/dotfiles/.config/i3/config" "$home/.config/i3"
