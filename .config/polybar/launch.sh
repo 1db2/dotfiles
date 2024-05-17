@@ -1,6 +1,10 @@
 #!/bin/bash
 
 killall -q polybar
-for m in $(polybar --list-monitors | cut -d":" -f1); do
-    MONITOR=$m polybar --reload mainbar &
+polybar --list-monitors | while IFS=: read -r m n; do
+	if grep -q "primary" <<< "$n"; then
+		MONITOR="$m" polybar --reload mainbar &
+	else
+		MONITOR="$m" polybar --reload secondbar &
+	fi
 done
