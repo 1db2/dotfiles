@@ -23,8 +23,6 @@ exec_always --no-startup-id sleep 1; $HOME/.config/polybar/launch.sh
 
 floating_modifier $mod
 
-tiling_drag modifier titlebar
-
 bindsym $mod+t exec kitty
 bindsym $mod+f exec firefox
 
@@ -125,3 +123,5 @@ mode "resize" {
 }
 
 bindsym $mod+r mode "resize"
+
+client.focused #CBA6f7 #CBA6f7 #CBA6f7 #CBA6f7
