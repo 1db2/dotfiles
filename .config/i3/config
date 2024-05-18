@@ -17,7 +17,7 @@ exec --no-startup-id nm-applet
 exec_always --no-startup-id picom --experimental-backend --config ~/.config/picom/picom.conf
 
 exec_always --no-startup-id sleep 1; $HOME/.config/i3/scripts/screen.sh
-exec_always --no-startup-id sleep 1; feh --bg-scale ~/.config/i3/wallpapers/evening-sky.png
+exec_always --no-startup-id sleep 1; feh --bg-scale ~/.config/i3/wallpapers/beach.jpg
 exec_always --no-startup-id $HOME/.config/i3/scripts/autotiling
 exec_always --no-startup-id sleep 1; $HOME/.config/polybar/launch.sh 
 
